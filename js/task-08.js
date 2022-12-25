@@ -3,8 +3,8 @@ const loginInputEl = formEl.firstElementChild.firstElementChild;
 const passwordInputEl = formEl.firstElementChild.nextElementSibling.firstElementChild;
 formEl.addEventListener('submit',(event)=>{
     event.preventDefault();
-    if(loginInputEl.value==="" || passwordInputEl.value ===""){
-    alert('Fill all fields');
+    if(loginInputEl.value.trim()==="" || passwordInputEl.value.trim() ===""){
+    return alert('Fill all fields');
     }
     const obj={};
     obj.name = loginInputEl.value;
