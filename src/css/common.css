@@ -22,3 +22,18 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+/* task3 */
+.gallery{
+display:flex;
+flex-wrap: wrap;
+gap:20px;
+list-style: none;
+justify-content: center;
+}
+.gallery__image{
+  outline: lime solid 3px;
+width: 450px;
+height:300px;
+display: block;
+}
+/* task3 */

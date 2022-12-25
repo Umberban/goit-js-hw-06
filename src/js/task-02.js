@@ -25,10 +25,10 @@ function addingListElements(id,list){
     let ingArray = [];
     const createIng = el => 
     {
-        let z = document.createElement("li");
-        z.textContent = el;
-        z.classList.add("item")
-        ingArray.push(z);
+        let liEl = document.createElement("li");
+        liEl.textContent = el;
+        liEl.classList.add("item")
+        ingArray.push(liEl);
     }
     
     list.forEach(createIng)
